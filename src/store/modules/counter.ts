@@ -1,7 +1,7 @@
 import { MutationTree, ActionTree } from 'vuex'
 
 const state = {
-  count: 0,
+  count: 0
 }
 
 const mutations = <MutationTree<typeof state>>{
@@ -10,17 +10,17 @@ const mutations = <MutationTree<typeof state>>{
   },
   increment(state) {
     state.count++
-  },
+  }
 }
 
 const actions = <ActionTree<typeof state, any>>{
   increment: ({ commit }) => commit('increment'),
-  decrement: ({ commit }) => commit('decrement'),
+  decrement: ({ commit }) => commit('decrement')
 }
 
 export default {
   namespaced: true,
   state,
   mutations,
-  actions,
+  actions
 }

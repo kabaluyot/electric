@@ -25,16 +25,19 @@
   "devDependencies": {
     "@mapbox/stylelint-processor-arbitrary-tags": "^0.2.0",
     "@vue/cli-plugin-babel": "^4.1.0",
-    "@vue/cli-plugin-eslint": "^4.1.0",
+    "@vue/cli-plugin-eslint": "^4.1.2",
     "@vue/cli-plugin-router": "^4.1.2",
     "@vue/cli-plugin-typescript": "^4.1.2",
     "@vue/cli-plugin-vuex": "^4.1.2",
     "@vue/cli-service": "^4.1.0",
+    "@vue/eslint-config-prettier": "^5.0.0",
     "@vue/eslint-config-typescript": "^4.0.0",
     "babel-eslint": "^10.0.3",
     "electron": "^6.0.0",
     "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^5.0.0",
+    "prettier": "^1.19.1",
     "stylelint": "^8.4.0",
     "stylelint-config-recommended": "^2.1.0",
     "typescript": "~3.5.3",
@@ -51,7 +54,8 @@
     "extends": [
       "plugin:vue/essential",
       "eslint:recommended",
-      "@vue/typescript"
+      "@vue/typescript",
+      "@vue/prettier"
     ],
     "rules": {},
     "parserOptions": {
