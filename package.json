@@ -1,8 +1,8 @@
 {
   "name": "electric",
   "version": "0.1.0",
-  "private": true,
-  "description": "Electron starter template with Typescript, VueJS, Vue Router, Vuex",
+  "private": false,
+  "description": "An Electron starter template with Typescript, VueJS, Vue Router, and Vuex support.",
   "author": "Karl Anthony Baluyot",
   "scripts": {
     "serve": "vue-cli-service serve",
