@@ -4,7 +4,7 @@ const state = {
   count: 0
 }
 
-const mutations = <MutationTree<typeof state>>{
+const mutations: MutationTree<typeof state> = {
   decrement(state) {
     state.count--
   },
@@ -13,7 +13,7 @@ const mutations = <MutationTree<typeof state>>{
   }
 }
 
-const actions = <ActionTree<typeof state, any>>{
+const actions: ActionTree<typeof state, any> = {
   increment: ({ commit }) => commit('increment'),
   decrement: ({ commit }) => commit('decrement')
 }
