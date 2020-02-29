@@ -21,6 +21,16 @@ module.exports = {
   // add your custom rules here
   rules: {
     'space-before-function-paren': ['error', 'never'],
-    '@typescript-eslint/indent': ['error', 2]
+    '@typescript-eslint/indent': ['error', 2],
+    '@typescript-eslint/member-delimiter-style': {
+      multiline: {
+        delimiter: 'none',
+        requireLast: false
+      },
+      singleline: {
+        delimiter: 'comma',
+        requireLast: false
+      }
+    }
   }
 }
